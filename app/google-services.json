@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "364297105529",
+    "project_id": "plant-care-63f18",
+    "storage_bucket": "plant-care-63f18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364297105529:android:9bef4bf0ac04970a54e4a8",
+        "android_client_info": {
+          "package_name": "com.djdjsn.emochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364297105529-lo7v8k9unpj5bl3be3jdptvnuad78mh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoAWhp57l0oLBnqErCcgU9biLU_g6DipE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364297105529-lo7v8k9unpj5bl3be3jdptvnuad78mh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364297105529:android:e51789535eaeae4e54e4a8",
+        "android_client_info": {
+          "package_name": "com.penelope.plantcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364297105529-lo7v8k9unpj5bl3be3jdptvnuad78mh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoAWhp57l0oLBnqErCcgU9biLU_g6DipE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364297105529-lo7v8k9unpj5bl3be3jdptvnuad78mh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

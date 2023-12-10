@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlueDark"
+    android:padding="32dp"
+    tools:context=".ui.auth.register.RegisterFragment">
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_background"
+        android:hint="아이디"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_background"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextId"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <EditText
+        android:id="@+id/editTextPasswordConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_background"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <EditText
+        android:id="@+id/editTextNickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_background"
+        android:hint="이름 (또는 닉네임)"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordConfirm"
+        tools:layout_editor_absoluteX="32dp" />
+
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_background"
+        android:hint="전화번호"
+        android:inputType="phone"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSendCode"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNickname" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPrivacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="개인정보처리방침 동의"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCode" />
+
+    <TextView
+        android:id="@+id/labelPrivacyPolicy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxPrivacyPolicy"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxPrivacyPolicy"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxPrivacyPolicy"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxPrivacyPolicy" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/classic_b"
+        android:text="회원가입"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/buttonSendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:text="인증코드 발송"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextPhone"
+        app:layout_constraintTop_toTopOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="number"
+        android:background="@drawable/edit_background"
+        android:hint="인증코드"
+        app:layout_constraintEnd_toStartOf="@+id/buttonVerifyCode"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <Button
+        android:id="@+id/buttonVerifyCode"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:text="인증하기"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonSendCode"
+        app:layout_constraintTop_toTopOf="@+id/editTextCode" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

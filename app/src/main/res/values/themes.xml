@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EmoChat" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorSecondary">@color/colorBlue</item>
+        <item name="android:statusBarColor" >@color/colorBlue</item>
+    </style>
+
+    <style name="Theme.EmoChat" parent="Base.Theme.EmoChat" />
+</resources>
